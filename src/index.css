@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f8fafc;
+}
+
+.sidebar-link {
+  @apply flex items-center gap-3 px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors;
+}
+
+.sidebar-link.active {
+  @apply bg-blue-50 text-blue-600;
+}
+
+.feature-card {
+  @apply p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow;
+}
+
+.feature-icon {
+  @apply w-12 h-12 rounded-full flex items-center justify-center;
+}
